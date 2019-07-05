@@ -6,7 +6,7 @@ This program implements the Fubuki Solver as a Dash App for better User Interfac
 """
 
 from flask import Flask
-server = Flask('my app')
+server = Flask('myapp')
 
 # ***
 
@@ -188,5 +188,5 @@ def fubukiSolver (n_clicks,position, posValue, r1, r2, r3, c1, c2, c3):
 
 if __name__== '__main__':
     app.server.run()
-    #app.run_server(debug=True, port=3004)
+   # app.run_server(debug=True, port=3004)
 
