@@ -10,7 +10,7 @@ dash==0.17.4
 decorator==4.0.11
 enum34==1.1.6
 finsymbols==1.1.1
-Flask==0.12.2
+Flask==1.0.0
 Flask-Compress==1.4.0
 Flask-Cors==3.0.2
 Flask-SeaSurf==0.2.2
@@ -19,7 +19,7 @@ gunicorn==19.6.0
 idna==2.5
 ipython-genutils==0.2.0
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.10.1
 jsonschema==2.6.0
 jupyter-core==4.3.0
 MarkupSafe==1.0
@@ -30,12 +30,12 @@ pandas-datareader==0.3.0.post0
 plotly==2.0.10
 python-dateutil==2.6.0
 pytz==2017.2
-requests==2.18.1
+requests==2.20.0
 requests-file==1.4.1
 requests-ftp==0.3.1
 scipy==0.18.1
 six==1.10.0
 traitlets==4.3.2
-urllib3==1.21.1
+urllib3==1.24.2
 Werkzeug==0.12.2
 wheel==0.26.0
