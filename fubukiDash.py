@@ -20,7 +20,7 @@ from dash.dependencies import Input, Output, State
 
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, server=server)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 colors = {
     'background' : '#81ecec',
@@ -168,18 +168,18 @@ def fubukiSolver (n_clicks,position, posValue, r1, r2, r3, c1, c2, c3):
                              index= ['R{0}'.format(i) for i in range(1, len(resOut)+1)])
     '''To check: if there are solutions, then table will be generated, 
         Otherwise, return there is no result'''
-    if(n>0):
-        '''To generate html.table once the function is called
-        '''
-        return html.Table(
+    if n>0:
+        
+        for i in range(n):
+            return html.Table(
         # Header
-        [html.Tr([html.Th(col) for col in dataframe.columns])] +
+                [html.Tr([html.Th(col) for col in dataframe.columns])] +
 
         # Body
-        [html.Tr([
-            html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-        ]) for i in range(min(len(dataframe), len(dataframe)))]
-        )
+                [html.Tr([
+                        html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
+                        ]) for i in range(min(len(dataframe), len(dataframe)))]
+                        )
     else:
         return 'There is no solution'   
    ###return '\n'.join(map(str,resOut))
@@ -187,6 +187,9 @@ def fubukiSolver (n_clicks,position, posValue, r1, r2, r3, c1, c2, c3):
    ###return pd.Series(orderList[0:3])
 
 if __name__== '__main__':
-    app.server.run()
-   # app.run_server(debug=True, port=3004)
+    #app.server.run()
+   app.run_server(debug=True, port=3004)
+   
+   ''' Idea is to join the rows into a single string then output them in a formatted output''' 
+   ''' Use join to do this but then how to return it from the function'''
 
