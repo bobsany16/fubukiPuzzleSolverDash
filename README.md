@@ -4,7 +4,7 @@ This app helps user solve Fubuki Puzzles.
 ## Instructions: 
 Place the number 1 to 9 in the 3 by 3 grid so that each horizontal and vertical line adds up to the given sum. You can only use each number once. R and C values are already given. 
 
-![alt text] (https://github.com/bobsany16/fubukiPuzzleSolverDash/blob/master/fubukiPic.png)
+![Alt text] (https://github.com/bobsany16/fubukiPuzzleSolverDash/blob/master/fubukiPic.png)
 > Image courtesy of Google
 
 As seen in the picture: R and C values along with a position and its value are already given. User will be prompted to input these fields and the program will come up with solutions.
